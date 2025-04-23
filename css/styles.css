@@ -230,7 +230,7 @@ video, audio {
   }
   
   input[type="text"],
-  input[type="date"]
+  input[type="date"],
   textarea,
   select {
     width: 100%;
@@ -261,7 +261,7 @@ video, audio {
     padding: 10px 20px;
     border: none;
     border-radius: var(--border-radius);
-    cursor: pointer
+    cursor: pointer;
     font-weight: bold;
     transition: var(--transition);
   }
@@ -270,3 +270,4 @@ video, audio {
     background-color: var(--primary-color);
     transform: translateY(-2px);
   }
+  
