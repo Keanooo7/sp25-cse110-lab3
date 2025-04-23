@@ -6,11 +6,53 @@
     <meta name="description" content="Meeting minutes for the Pomodoro Timer First Brainstorm session">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      #date-attendance h3 {
+        margin-top: 20px;
+        color: #e67e22;
+      }
+      
+      #agenda ol {
+        counter-reset: agenda-counter;
+        list-style-type: none;
+        margin-left: 0;
+      }
+      
+      #agenda ol li {
+        counter-increment: agenda-counter;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      #agenda ol li::before {
+        content: counter(agenda-counter);
+        background-color: var(--secondary-color, #3498db);
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      #date-attendance li:first-child {
+        font-weight: bold;
+        color: var(--primary-color, #2c3e50);
+      }
+      #date-attendance li:has(em:contains("Absent")) {
+        color: #7f8c8d;
+        text-decoration: line-through;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Meeting Minutes</h1>
-      <h2>Meeting section: Group 9 week 2</h2>
+      <h2 style="color: #9b59b6; letter-spacing: 1px;">Meeting section: Group 9 week 2</h2>
       <nav>
         <ul>
           <li><a href="#date-attendance">Date & Attendance</a></li>
@@ -64,7 +106,7 @@
             <li><b>Travis</b> new idea break down for the (home page)</li>
           </ul>
           <details>
-            <summary><b>Miscellaneous Comments/Questions</b></summary>
+            <summary style="background: linear-gradient(to right, #3498db, #2c3e50); color: white;"><b>Miscellaneous Comments/Questions</b></summary>
             <p>Brendan tripped on his way in</p>
             <p>Overwatch update: Junkrat is trash now <br>
             Everyone agreed to try the new character next week</p>
@@ -83,14 +125,8 @@
           <h3>Whiteboard Diagrams:</h3>
           <div class="diagram-container">
             <h4>Pomodoro Timer Flow Diagram:</h4>
-            <img src="pomodoro-flow.jpg" alt="Pomodoro Timer Flow Diagram drawn on whiteboard" width="500">
+            <img src="elephant7.jpg" alt="elephant drawn on whiteboard" width="450">
             <span class="caption">Sketched by Travis during the meeting</span>
-          </div>
-          
-          <div class="diagram-container"> 
-            <h4>Database Schema:</h4>
-            <img src="database-schema.jpg" alt="Database schema for user data storage" width="500">
-            <span class="caption">Proposed by Charan and discussed by the team</span>
           </div>
         </section>
 
@@ -170,7 +206,7 @@
                 <option value="taha">Taha Masood</option>
               </select><br><br>
               
-              <button type="submit">Submit Feedback</button>
+              <button type="submit" style="background-image: linear-gradient(to right, #3498db, #2980b9); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Submit Feedback</button>
             </fieldset>
           </form>
         </section>
