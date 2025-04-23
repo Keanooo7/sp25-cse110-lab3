@@ -195,3 +195,78 @@
     margin-bottom: 15px;
     background-color: #e9ecef;
   }
+
+  /* Media elements */
+video, audio {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Form Styling */
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  fieldset {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  input[type="text"],
+  input[type="date"]
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    font-family: var(--body-font);
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer
+    font-weight: bold;
+    transition: var(--transition);
+  }
+  
+  button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+  }
