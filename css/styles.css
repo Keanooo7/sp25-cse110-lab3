@@ -398,7 +398,7 @@ section {
   }
   
   section {
-    padding: 15px;
+    padding: 15px
   }
 }
 
@@ -420,7 +420,7 @@ section {
   }
   
   h1, h2, h3, h4 {
-    page-break-after: avoid
+    page-break-after: avoid;
   }
   
   img {
@@ -431,3 +431,5 @@ section {
     margin: 2cm;
   }
 }
+
+
